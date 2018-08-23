@@ -1,0 +1,12 @@
+{
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "files.trimTrailingWhitespace": true,
+  "[typescript]": { "editor.formatOnSave": true },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "files.exclude": {
+    "**/.git": true,
+    "dist": true,
+    "node_modules": true
+  }
+}
