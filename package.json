@@ -8,7 +8,8 @@
         "build": "tsc",
         "build:watch": "tsc -w",
         "start": "node -r dotenv/config dist/index.js",
-        "test": "jest"
+        "test": "jest",
+        "test:coverage": "jest --coverage"
     },
     "devDependencies": {
         "@types/debug": "^0.0.30",
@@ -18,9 +19,13 @@
         "@types/koa-bodyparser": "^5.0.1",
         "@types/koa-logger": "^3.1.0",
         "@types/koa-router": "^7.0.31",
+        "@types/lodash": "^4.14.116",
         "@types/node": "^10.7.1",
+        "@types/shortid": "^0.0.29",
+        "@types/supertest": "^2.0.5",
         "jest": "^23.5.0",
         "prettier": "^1.14.2",
+        "supertest": "^3.1.0",
         "ts-jest": "^23.1.4"
     },
     "dependencies": {
@@ -31,7 +36,9 @@
         "koa-bodyparser": "^4.2.1",
         "koa-logger": "^3.2.0",
         "koa-router": "^7.4.0",
+        "lodash": "^4.17.10",
         "reflect-metadata": "^0.1.12",
+        "shortid": "^2.2.13",
         "typescript": "^3.0.1"
     },
     "jest": {
