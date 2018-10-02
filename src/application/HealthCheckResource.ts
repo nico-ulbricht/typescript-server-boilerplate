@@ -1,12 +1,14 @@
+import { injectable } from 'inversify'
 import { Resource } from './Resource'
 import * as Koa from 'koa'
 import * as Router from 'koa-router'
 
+@injectable()
 export class HealthCheckResource implements Resource {
     private readonly router: Router
 
     constructor() {
-        this.router = new Router({ prefix: '/' })
+        this.router = new Router({ prefix: '' })
         this.router.get('/healthz', this.processHealthCheck.bind(this))
     }
 
